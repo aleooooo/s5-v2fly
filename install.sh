@@ -26,10 +26,3 @@ chmod -R 777 /usr/bin/gost
 chmod +x /etc/rc.d/rc.local
 echo -e 'systemctl enable v2ray\nsystemctl start v2ray\nnohup gost -L root:asd12345@0.0.0.0:80 > /dev/null 2>&1 &' >> /etc/rc.d/rc.local
 reboot
-
-
-
-
-
-
-
