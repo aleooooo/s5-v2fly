@@ -1,7 +1,5 @@
 systemctl stop firewalld.service
 systemctl disable firewalld.service
-yum -y install gcc
-yum -y install wget
 #BBR
 wget –no-check-certificate https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/install_bbr.sh 
 chmod +x install_bbr.sh 
@@ -22,7 +20,6 @@ mv gost-linux-amd64-2.11.1 /usr/bin/gost
 chmod -R 777 /usr/bin/gost
 
 
-
 chmod +x /etc/rc.d/rc.local
-echo -e 'systemctl enable v2ray\nsystemctl start v2ray\nnohup gost -L root:asd12345@0.0.0.0:80 > /dev/null 2>&1 &' >> /etc/rc.d/rc.local
+echo -e 'systemctl enable v2ray\nsystemctl start v2ray\nnohup gost -L root:asd12345@0.0.0.0:1080 > /dev/null 2>&1 &' >> /etc/rc.d/rc.local
 reboot
