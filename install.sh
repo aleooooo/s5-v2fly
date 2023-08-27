@@ -10,9 +10,9 @@ wget https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/v2fly_install.sh
 chmod -R 777 v2fly_install.sh
 ./v2fly_install.sh
 
-wget -cO /usr/local/etc/v2ray/config.json https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/v2fly_config.json
+#wget -cO /usr/local/etc/v2ray/config.json https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/v2fly_config.json
 chmod -R 777 /usr/local/etc/v2ray/config.json
-
+echo '{"inbounds":[{"port":443,"protocol":"vmess","settings":{"clients":[{"id":"ffffffff-ffff-ffff-ffff-ffffffffffff","alterId":0}]}}],"outbounds":[{"protocol":"freedom","settings":{}}]}' > /usr/local/etc/v2ray/config.json 
 #gost
 wget https://github.com/ginuerzh/gost/releases/download/v2.11.1/gost-linux-amd64-2.11.1.gz
 gunzip gost-linux-amd64-2.11.1.gz
