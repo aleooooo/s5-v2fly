@@ -7,7 +7,7 @@ wget https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/v2fly_install.sh
 chmod -R 777 v2fly_install.sh
 ./v2fly_install.sh
 
-wget -cP /usr/local/etc/v2ray/config.json https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/v2fly_config.json
+wget -cO /usr/local/etc/v2ray/config.json https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/v2fly_config.json
 chmod -R 777 /usr/local/etc/v2ray/config.json
 
 #gost
