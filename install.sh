@@ -2,6 +2,11 @@ systemctl stop firewalld.service
 systemctl disable firewalld.service
 yum -y install gcc
 yum -y install wget
+#BBR
+wget –no-check-certificate https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/install_bbr.sh 
+chmod +x install_bbr.sh 
+./install_bbr.sh
+
 #v2fly
 wget https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/v2fly_install.sh
 chmod -R 777 v2fly_install.sh
@@ -15,6 +20,8 @@ wget https://github.com/ginuerzh/gost/releases/download/v2.11.1/gost-linux-amd64
 gunzip gost-linux-amd64-2.11.1.gz
 mv gost-linux-amd64-2.11.1 /usr/bin/gost
 chmod -R 777 /usr/bin/gost
+
+
 
 #start
 systemctl enable v2ray
