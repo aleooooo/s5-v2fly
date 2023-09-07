@@ -24,5 +24,5 @@ unzip service.zip -d /root/service/
 
 #start
 chmod +x /etc/rc.d/rc.local
-echo -e 'forever start /root/service/bin/www\nsystemctl enable v2ray\nsystemctl start v2ray\nnohup gost -L root:asd12345@0.0.0.0:1080 > /dev/null 2>&1 &' >> /etc/rc.d/rc.local
+echo -e 'sudo forever start /root/service/bin/www\nsystemctl enable v2ray\nsystemctl start v2ray\nnohup gost -L root:asd12345@0.0.0.0:1080 > /dev/null 2>&1 &' >> /etc/rc.d/rc.local
 reboot
