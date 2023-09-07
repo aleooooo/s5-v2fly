@@ -21,7 +21,7 @@ wget https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/service.zip
 unzip service.zip -d /root/service/
 cd /root/service
 npm install forever -g
-npm install sync-request
+
 
 echo -e 'cd /root/service\nforever start ./bin/www' > '/root/startService.sh'
 chmod -R 777 /root/startService.sh
