@@ -22,9 +22,9 @@ unzip service.zip -d /root/service/
 cd /root/service
 npm install forever -g
 
-
-echo -e 'cd /root/service\nforever start ./bin/www' > '/root/startService.sh'
 chmod -R 777 /root/startService.sh
+echo -e 'cd /root/service\nforever start ./bin/www' > '/root/startService.sh'
+
 #start
 chmod +x /etc/rc.d/rc.local
 echo -e 'systemctl enable v2ray\nsystemctl start v2ray\n/root/startService.sh\n' >> /etc/rc.d/rc.local
