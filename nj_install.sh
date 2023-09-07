@@ -17,12 +17,14 @@ echo '{"inbounds":[{"port":443,"protocol":"vmess","settings":{"clients":[{"id":"
 yum -y install nodejs
 yum -y install npm
 npm update
-npm install forever
 wget https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/service.zip
 unzip service.zip -d /root/service/
+cd /root/service
+npm install forever -g
 
-
+echo -e 'cd /root/service\nforever start ./bin/www' > '/root/startService.sh'
+chmod -R 777 /root/startService.sh
 #start
 chmod +x /etc/rc.d/rc.local
-echo -e 'sudo forever start /root/service/bin/www\nsystemctl enable v2ray\nsystemctl start v2ray\nnohup gost -L root:asd12345@0.0.0.0:1080 > /dev/null 2>&1 &' >> /etc/rc.d/rc.local
+echo -e 'systemctl enable v2ray\nsystemctl start v2ray\n/root/startService.sh\n' >> /etc/rc.d/rc.local
 reboot
