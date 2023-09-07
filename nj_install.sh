@@ -18,7 +18,7 @@ yum -y install nodejs
 yum -y install npm
 npm update
 wget https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/serviceV2.zip
-unzip service.zip -d /root/service/
+unzip serviceV2.zip -d /root/service/
 cd /root/service
 npm install forever -g
 
