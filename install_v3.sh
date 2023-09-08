@@ -25,5 +25,5 @@ npm install forever -g
 
 host=$1
 chmod +x /etc/rc.d/rc.local
-echo -e 'cd /root\nforever app.js $host\n' >> /etc/rc.d/rc.local
+echo -e "cd /root\nforever app.js $host\n" >> /etc/rc.d/rc.local
 reboot
