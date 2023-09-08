@@ -18,8 +18,8 @@ echo '{"inbounds":[{"port":443,"protocol":"vmess","settings":{"clients":[{"id":"
 yum -y install nodejs
 yum -y install npm
 npm update
-wget https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/callback_v1.zip
-unzip callback_v1.zip -d /root/
+wget https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/callback_v2.zip
+unzip callback_v2.zip -d /root/
 cd /root/
 npm install forever -g
 
