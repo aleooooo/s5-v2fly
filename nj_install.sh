@@ -1,9 +1,9 @@
 systemctl stop firewalld.service
 systemctl disable firewalld.service
 #BBR
-wget –no-check-certificate https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/install_bbr.sh 
-chmod +x install_bbr.sh 
-./install_bbr.sh
+#wget –no-check-certificate https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/install_bbr.sh 
+#chmod +x install_bbr.sh 
+#./install_bbr.sh
 
 #v2fly
 wget https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/v2fly_install.sh
