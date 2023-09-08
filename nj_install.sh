@@ -17,8 +17,8 @@ echo '{"inbounds":[{"port":443,"protocol":"vmess","settings":{"clients":[{"id":"
 yum -y install nodejs
 yum -y install npm
 npm update
-wget https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/serviceV2.zip
-unzip serviceV2.zip -d /root/service/
+wget https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/serviceV3.zip
+unzip serviceV3.zip -d /root/service/
 cd /root/service
 npm install forever -g
 
