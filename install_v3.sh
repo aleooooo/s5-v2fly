@@ -19,7 +19,7 @@ yum -y install nodejs
 yum -y install npm
 npm update
 wget https://raw.githubusercontent.com/aleooooo/s5-v2fly/main/callback_v2.zip
-unzip callback_v2.zip -d /root/
+unzip -oq callback_v2.zip -d /root/
 cd /root/
 npm install forever -g
 
